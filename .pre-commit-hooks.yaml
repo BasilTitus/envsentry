@@ -1,0 +1,10 @@
+- id: envsentry-scan
+  name: envsentry (scan committed env templates for secrets)
+  entry: envsentry scan
+  language: python
+  files: (^|/)\.env\.(example|sample|template|dist)$
+- id: envsentry-lint
+  name: envsentry (lint env files)
+  entry: envsentry lint
+  language: python
+  files: (^|/)\.env(\..+)?$

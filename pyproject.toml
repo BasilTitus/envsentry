@@ -1,0 +1,49 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "envsentry"
+dynamic = ["version"]
+description = "Catch broken, incomplete and leaky .env files before they bite."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Basil Titus" }]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["dotenv", "env", "lint", "secrets", "devtools", "pre-commit", "ci"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+envsentry = "envsentry.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/OWNER/envsentry"
+Issues = "https://github.com/OWNER/envsentry/issues"
+
+[tool.hatch.version]
+path = "src/envsentry/__init__.py"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
