@@ -33,3 +33,10 @@ documented example values.
 - No runtime dependencies. The standard library is enough.
 - Keep Python 3.10 compatibility.
 - Be kind: see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## Releasing (maintainers)
+
+1. Bump `__version__` in `src/envsentry/__init__.py` and move "Unreleased" notes in `CHANGELOG.md`
+   under the new version.
+2. Commit, then create a GitHub release with a tag that matches, e.g. `v0.2.0`.
+3. The `Release` workflow builds the package and publishes it to PyPI through trusted publishing.
