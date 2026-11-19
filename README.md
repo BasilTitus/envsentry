@@ -1,7 +1,7 @@
 # envsentry
 
 [![CI](https://github.com/BasilTitus/envsentry/actions/workflows/ci.yml/badge.svg)](https://github.com/BasilTitus/envsentry/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 

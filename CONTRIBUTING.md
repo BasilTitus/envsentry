@@ -31,5 +31,5 @@ documented example values.
 ## Ground rules
 
 - No runtime dependencies. The standard library is enough.
-- Keep Python 3.9 compatibility.
+- Keep Python 3.10 compatibility.
 - Be kind: see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).

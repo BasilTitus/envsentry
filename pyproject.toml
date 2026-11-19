@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Basil Titus" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = []
 keywords = ["dotenv", "env", "lint", "secrets", "devtools", "pre-commit", "ci"]
 classifiers = [
@@ -42,7 +42,7 @@ pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 110
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP"]
